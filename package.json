@@ -1,0 +1,37 @@
+{
+  "name": "failerr",
+  "version": "0.1.0",
+  "description": "Tools for type-safe handling of expected failure conditions through standard control flow",
+  "main": "dist/cjs/failerr.js",
+  "module": "dist/esm/failerr.js",
+  "type": "commonjs",
+  "scripts": {
+    "test": "node --test",
+    "clean": "rm -rf dist/",
+    "build:es": "tsc -p tsconfig.esm.json && echo '{\"type\": \"module\"}' > dist/esm/package.json",
+    "build:cjs": "tsc -p tsconfig.cjs.json && echo '{\"type\": \"commonjs\"}' > dist/cjs/package.json",
+    "build": "npm run clean && npm run build:es && npm run build:cjs"
+  },
+  "author": "Jacopo Scazzosi <jacopo@scazzosi.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.12.7",
+    "typescript": "^5.4.5"
+  },
+  "homepage": "https://github.com/jacoscaz/no-exception",
+  "bugs": "https://github.com/jacoscaz/no-exception/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jacoscaz/no-exception.git"
+  },
+  "keywords": [
+    "exception",
+    "error",
+    "handling",
+    "rejection",
+    "typed",
+    "typescript",
+    "failure",
+    "fail"
+  ]
+}
