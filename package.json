@@ -1,6 +1,6 @@
 {
   "name": "failerr",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Tools for type-safe handling of expected failure conditions through standard control flow",
   "main": "dist/cjs/failerr.js",
   "module": "dist/esm/failerr.js",
@@ -18,11 +18,11 @@
     "@types/node": "^20.12.7",
     "typescript": "^5.4.5"
   },
-  "homepage": "https://github.com/jacoscaz/no-exception",
-  "bugs": "https://github.com/jacoscaz/no-exception/issues",
+  "homepage": "https://github.com/jacoscaz/failerr",
+  "bugs": "https://github.com/jacoscaz/failerr/issues",
   "repository": {
     "type": "git",
-    "url": "https://github.com/jacoscaz/no-exception.git"
+    "url": "https://github.com/jacoscaz/failerr.git"
   },
   "keywords": [
     "exception",

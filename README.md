@@ -79,7 +79,7 @@ fail.data;        // => empty, frozen object
 `Fail` with specific data shape:
 
 ```typescript
-const fail: Fail<{ code: number; }> = mkFail('some message', { code: 42});
+const fail: Fail<{ code: number }> = mkFail('some message', { code: 42 });
 fail.message;     // => 'some message'
 fail.data.code;   // => 42
 ```
@@ -109,7 +109,7 @@ non-`Fail`
 The Fail interface can be easily extended using types or interfaces:
 
 ```typescript
-type FailWithCode = Fail<{ code: number; }>;
+type FailWithCode = Fail<{ code: number }>;
 
 const fooBar = (): number | FailWithCode => {
   return Math.random() > 0.5 ? 42 : mkFail({ code: 42 });
